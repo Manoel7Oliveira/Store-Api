@@ -25,18 +25,3 @@ Aplicação front-end desenvolvida com React e Vite para consumo de API REST de 
 
 Este projeto foi desenvolvido com o objetivo de praticar a criação de aplicações em React, consumo de APIs REST, roteamento entre páginas e gerenciamento de estado.
 
-## ▶️ Como executar
-
-```bash
-# Clone o repositório
-git clone https://github.com/Manoel7Oliveira/Store-Api.git
-
-# Acesse a pasta
-cd store-api
-
-# Instale as dependências
-npm install
-
-# Execute o projeto
-npm run dev
-```
