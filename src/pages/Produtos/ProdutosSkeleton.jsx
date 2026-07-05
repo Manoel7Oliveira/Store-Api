@@ -2,9 +2,6 @@ import styles from './ProdutosSkeleton.module.css'
 
 const produtos = Array.from({ length: 3 });
 
-console.log('Produtos Skeleton');
-console.log(produtos);
-
 function ProdutosSkeleton() {
 
     return (

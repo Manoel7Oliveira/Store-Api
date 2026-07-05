@@ -12,15 +12,6 @@ function Carrinho() {
 
     const navigate = useNavigate();
 
-    // function handleRemover(item) {
-    //     const confirmou = window.confirm('Tem certeza que deseja remover esse item do carrinho ' + item.title);
-
-    //     if (confirmou) {
-    //         removerDoCarrinho(item.id);
-    //     }
-
-    // }
-
     function iniciarExclusao(id) {
         setIdParaExclusao(id); // Css - Animaçao
         setItemParaConfirmar(null);
@@ -54,9 +45,6 @@ function Carrinho() {
 
             if (response.ok) {
                 const data = await response.json();
-                console.log('Sucesso');
-                console.log(data);
-
                 alert('Pedido enviado com sucesso');
                 limparCarrinho();
             }
@@ -64,7 +52,7 @@ function Carrinho() {
             navigate("/");
 
         } catch (err) {
-            console.log('Error', err);
+            console.error('Error', err);
         }
     }
 
@@ -108,7 +96,6 @@ function Carrinho() {
                                     <button onClick={() => atualizarQuantidade(item.id, item.quantidade - 1)}>-</button>
                                     <span>{item.quantidade}</span>
                                     <button onClick={() => atualizarQuantidade(item.id, item.quantidade + 1)}>+</button>
-                                    {/* <button className={styles.removeBtn} onClick={() => handleRemover(item)}>Remover</button> */}
                                     <button className={styles.removeBtn} onClick={() => setItemParaConfirmar(item)}>Remover</button>
 
                                 </div>

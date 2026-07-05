@@ -18,7 +18,7 @@ function Produtos() {
                 setProdutos(data);
              
             } catch (err) {
-                console.log('Error', err)
+                console.error('Error', err)
             } finally {
                 setCarregando(false);
             }
