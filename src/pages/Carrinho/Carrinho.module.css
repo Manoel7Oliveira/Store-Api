@@ -1,0 +1,119 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+}
+
+.item {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+    align-items: center;
+    text-align: left;
+}
+
+.item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.price {
+    font-weight: 900;
+}
+
+.controles {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.controles button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #00000011;
+}
+
+.controles .removeBtn {
+    color: #e74c3c;
+    border-color: #e74c3c;
+    background: transparent;
+    margin-left: 1rem;
+}
+
+.valorTotal {
+    background: #f9f9f911;
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+}
+
+.checkoutBtn {
+    width: 100%;
+    padding: 1rem;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.item {
+    transition: all 0.5s ease;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.itemSaindo {
+    opacity: 0;
+    transform: translateX(-50px);
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    border: none;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modalBtns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.confirmBtn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer
+}

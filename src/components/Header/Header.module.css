@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg);
+    /* Usando suas variaveis do :root */
+    border-bottom: 1px solid var(--border);
+}
+
+.nav ul {
+    display: flex;
+    gap: 2.5rem;
+    list-style-type: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.nav a:hover {
+    color: var(--accent);
+}
+
+.nav .active {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+
+.badge {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent);
+    left: -6px;
+    top: -6px;
+    border-radius: 50%;
+    color: white;
+    font-size: .75rem;
+
+    animation: pop .3s ease-in-out;
+}
+
+@keyframes pop {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+}
