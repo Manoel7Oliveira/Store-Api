@@ -32,7 +32,7 @@ Este projeto foi desenvolvido com o objetivo de praticar a criação de aplicaç
 git clone https://github.com/Manoel7Oliveira/Store-Api.git
 
 # Acesse a pasta
-cd Store-Api
+cd store-api
 
 # Instale as dependências
 npm install
